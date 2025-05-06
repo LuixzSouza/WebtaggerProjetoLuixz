@@ -1,0 +1,399 @@
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis globais */
+:root {
+    /* Cores do logo */
+    --greenWebtagger: #a1ab04;
+    --redWebTagger: #d6040b;
+    --blueWebTagger: #066eb4;
+    --yellowWebTagger: #f7b400;
+
+    /* Cores padrão */
+    --bg-white: #ffffff;
+    --bg-black: #000000;
+    --bg-black-50: rgba(0, 0, 0, 0.500);
+    --bg-header: #f5f5f5;
+    --text-primary: #222222;
+    --text-secondary: #666666;
+
+    /* Fontens */
+    --font-family: "Roboto", Helvetica, sans-serif;
+
+    /* Angulos */
+    --angle: 0deg;
+}
+
+/* Corpo básico */
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-white);
+    color: var(--text-primary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-secondary);
+}
+
+.container {
+    width: 100%;
+    max-width: 92.50rem;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+/* Header padrão */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg-header);
+    padding: 8px 0;
+
+    .container {
+        .content_header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .div_logo {
+                display: flex;
+                align-items: center;
+                gap: .625rem;
+
+                span {
+                    font-size: 1.25rem;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: transparent;
+                        background: conic-gradient(
+                            from var(--angle),
+                            var(--redWebTagger),
+                            var(--yellowWebTagger),
+                            var(--greenWebtagger),
+                            var(--blueWebTagger)
+                        );
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                    }
+                }
+            }
+
+            nav {
+                ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 1.25rem;
+
+                    li {
+                        position: relative;
+
+                        a {
+                            text-decoration: none;
+                            color: var(--text-primary);
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
+                            font-size: 16px;
+
+                            &:hover {
+                                background: linear-gradient(
+                                    45deg,
+                                    var(--greenWebtagger),
+                                    var(--yellowWebTagger),
+                                    var(--blueWebTagger),
+                                    var(--redWebTagger)
+                                );
+                                -webkit-background-clip: text;
+                                background-clip: text;
+                                color: transparent;
+                            }
+
+                            &.active {
+                                background: linear-gradient(
+                                    45deg,
+                                    var(--greenWebtagger),
+                                    var(--yellowWebTagger),
+                                    var(--blueWebTagger),
+                                    var(--redWebTagger)
+                                );
+                                -webkit-background-clip: text;
+                                background-clip: text;
+                                color: transparent;
+                            }
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -5px;
+                            height: 1px;
+                            width: 0%;
+                            background: linear-gradient(
+                                to left,
+                                var(--redWebTagger),
+                                var(--yellowWebTagger),
+                                var(--greenWebtagger),
+                                var(--blueWebTagger)
+                            );
+                            transition: width 0.4s ease;
+                        }
+
+                        &.hover-left {
+                            &::after {
+                                left: 0;
+                                right: auto;
+                            }
+
+                            &:hover::after {
+                                width: 100%;
+                            }
+                        }
+
+                        &.hover-right {
+                            &::after {
+                                right: 0;
+                                left: auto;
+                            }
+
+                            &:hover::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .buttons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1.5875rem;
+            }
+        }
+    }
+}
+
+/* Menu lateral e overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-black-50);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 98;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    max-width: 50vw;
+    background: var(--bg-header);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    z-index: 99;
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .content-top-menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        .div_logo {
+            display: flex;
+            align-items: center;
+            gap: .625rem;
+
+            span {
+                font-size: 1.25rem;
+                font-weight: bold;
+
+                &:hover {
+                    color: transparent;
+                    background: conic-gradient(
+                        from var(--angle),
+                        var(--redWebTagger),
+                        var(--yellowWebTagger),
+                        var(--greenWebtagger),
+                        var(--blueWebTagger)
+                    );
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        li {
+            a {
+                text-decoration: none;
+                color: var(--text-primary);
+                font-size: 1.1rem;
+                display: inline-block;
+                align-items: center;
+                gap: .75rem;
+                transition: all 0.3s ease-in-out;
+                
+                &:hover {
+                    transform: scale(1.1);
+                    background: linear-gradient(
+                        45deg,
+                        var(--greenWebtagger),
+                        var(--yellowWebTagger),
+                        var(--blueWebTagger),
+                        var(--redWebTagger)
+                    );
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                }
+            }
+        }
+    }
+
+    .close-menu {
+        align-self: center;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--text-primary);
+        &:hover {
+            color: var(--redWebTagger);
+        }
+    }
+
+}
+
+/* Estado ativo do menu */
+.menu-active {
+    .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .mobile-menu {
+        right: 0;
+    }
+}
+
+/* Responsivo */
+@media (min-width: 1200px) {
+    header {
+        .container {
+            .content_header {
+                .buttons {
+                    .menuMobile {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        .container {
+            .content_header {
+                nav {
+                    display: none;
+                }
+    
+                .buttons {
+                    .menuMobile {
+                        display: block;
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 1.5rem;
+                        color: var(--text-primary);
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile-menu {
+        max-width: 75vw;
+    }
+}
+
+/* Botão animado */
+.animated-button {
+    color: var(--text-primary);
+    font-size: 16px;
+    border: .1875rem solid transparent;
+    border-radius: .75rem;
+    background: linear-gradient(var(--bg-white), var(--bg-white)) padding-box, conic-gradient( from var(--angle), var(--redWebTagger), var(--yellowWebTagger), var(--greenWebtagger), var(--blueWebTagger)) border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    animation: spin 8s linear infinite;
+}
+
+.animated-button:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 .9375rem var(--bg-black-50);
+}
+
+.animated-button span {
+    display: inline-block;
+    padding: .625rem 1.25rem;
+}
+
+.animated-button span:hover {
+    background: conic-gradient(
+        from var(--angle),
+        var(--redWebTagger),
+        var(--yellowWebTagger),
+        var(--greenWebtagger),
+        var(--blueWebTagger)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* não esqueça disso para mostrar o gradiente no texto! */
+}
+
+
+/* Animações */
+@keyframes spin {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
