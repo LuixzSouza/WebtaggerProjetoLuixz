@@ -85,3 +85,14 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.remove("menu-active");
     });
 });
+
+//Timer Slide
+const swiperEl = document.querySelector('.mySwiper');
+const progressCircle = document.querySelector('.autoplay-progress svg');
+const progressContent = document.querySelector('.autoplay-progress span');
+
+swiperEl.addEventListener('autoplayTimeLeft', (e) => {
+    const [swiper, time, progress] = e.detail;
+    progressCircle.style.setProperty('--progress', 1 - progress);
+    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+});

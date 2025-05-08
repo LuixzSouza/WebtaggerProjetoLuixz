@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- css -->
-     <link rel="stylesheet" href="/style.css">
+     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header> 
@@ -97,7 +97,7 @@
                         <p>A Webtagger traz soluções inteligentes e personalizadas de sites, aplicativos, CRMs, <br/> ERP'S e sistemas sob medida para empresas de Pouso Alegre e região.</p>
                         <div class="contet_Home_Butttons" >
                             
-                            <button class="animated-button">
+                            <button class="animated-button filled">
                                 <span>
                                     O que fazemos
                                     <i class="fa-solid fa-circle-question"></i>
@@ -112,7 +112,7 @@
                         </div>
                     </div>
                     <div class="content_Rigth_Home" >
-                        <img src="/img/brand/HomeBrand.png" alt="Bradge Home">
+                        <img src="/img/mockups/Home.png" alt="Bradge Home">
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
             </div>
         </section>
     
-        <section id="Cases">
+        <section id="Cases" class="sect_Cases" >
             <div class="container">
                 <div class="case_1">
                   <span>PROJETOS</span>
@@ -148,159 +148,191 @@
                 </div>
             </div>
           
-            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30" slides-per-view="3"
-              centered-slides="true" autoplay-delay="3500" autoplay-disable-on-interaction="false" loop="true">
+            <swiper-container class=" mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30" slides-per-view="3"
+              centered-slides="true" autoplay-delay="3500" autoplay-disable-on-interaction="true" loop="true" effect="coverflow" coverflow-effect-slide-shadows="false">
           
-              <swiper-slide>
-                <div class="case_item">
-                  <h3>Projeto Natureza 1</h3>
-                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Projeto Natureza 1" />
+                <swiper-slide>
+                    <div class="case_item">
+                        <h3>EAG Empresa Autogerenciável</h3>
+                        <div class="case_content" >
+                            <img class="case_desktop" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/EAGDesktop.webp" alt="Projeto Natureza 1" />
+                            <img class="case_mobile" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/EAGMobile.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="case_item">
+                        <h3>AIFLA Construtora</h3>
+                        <div class="case_content" >
+                            <img class="case_desktop" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/AIFLAConstrutoraDesktop.webp" alt="Projeto Natureza 1" />
+                            <img class="case_mobile" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/AIFLAConstrutoraMobile.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="case_item">
+                        <h3>GEOMAT Distribuidora</h3>
+                        <div class="case_content" >
+                            <img class="case_desktop" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/geomatDesktop.webp" alt="Projeto Natureza 1" />
+                            <img class="case_mobile" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/geomatMobile.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="case_item">
+                        <h3>OncoLavras</h3>
+                        <div class="case_content" >
+                            <img class="case_desktop" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/OncolavrasDesk.webp" alt="Projeto Natureza 1" />
+                            <img class="case_mobile" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/OncolavrasMob.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="case_item">
+                        <h3>Seul Cosméticos</h3>
+                        <div class="case_content" >
+                            <img class="case_desktop" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/seulDesktop.webp" alt="Projeto Natureza 1" />
+                            <img class="case_mobile" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/seulMobile.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="case_item">
+                        <h3>Cacife Tintas</h3>
+                        <div class="case_content" >
+                            <img class="case_desktop" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/cacifeDesktop.webp" alt="Projeto Natureza 1" />
+                            <img class="case_mobile" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/cacifeMobile.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="case_item">
+                        <h3>Hud Sports</h3>
+                        <div class="case_content" >
+                            <img class="case_desktop" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/hubDesktop.webp" alt="Projeto Natureza 1" />
+                            <img class="case_mobile" src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/mockups/hubMobile.webp" alt="">
+                        </div>
+                    </div>
+                </swiper-slide>
+
+                <!-- contêiner de paginação -->
+                <div class="minha-pagination"></div>
+
+                <!-- setas customizadas -->
+                <div class="minha-prev"></div>
+                <div class="minha-next"></div>
+
+                <!-- progresso de autoplay continua aqui -->
+                <div class="autoplay-progress" slot="container-end">
+                    <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
                 </div>
-              </swiper-slide>
-          
-              <swiper-slide>
-                <div class="case_item">
-                  <h3>Projeto Natureza 2</h3>
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Projeto Natureza 2" />
-                </div>
-              </swiper-slide>
-          
-              <swiper-slide>
-                <div class="case_item">
-                  <h3>Projeto Natureza 3</h3>
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Projeto Natureza 3" />
-                </div>
-              </swiper-slide>
-          
-              <swiper-slide>
-                <div class="case_item">
-                  <h3>Projeto Natureza 4</h3>
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Projeto Natureza 4" />
-                </div>
-              </swiper-slide>
-          
-              <swiper-slide>
-                <div class="case_item">
-                  <h3>Projeto Natureza 5</h3>
-                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Projeto Natureza 5" />
-                </div>
-              </swiper-slide>
-          
-              <swiper-slide>
-                <div class="case_item">
-                  <h3>Projeto Natureza 6</h3>
-                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="Projeto Natureza 6" />
-                </div>
-              </swiper-slide>
-          
-              <swiper-slide>
-                <div class="case_item">
-                  <h3>Projeto Natureza 7</h3>
-                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="Projeto Natureza 7" />
-                </div>
-              </swiper-slide>
-          
-              <swiper-slide>
-                <div class="case_item">
-                  <h3>Projeto Natureza 8</h3>
-                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="Projeto Natureza 8" />
-                </div>
-              </swiper-slide>
-          
-              <swiper-slide>
-                <div class="case_item">
-                  <h3>Projeto Natureza 9</h3>
-                  <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Projeto Natureza 9" />
-                </div>
-              </swiper-slide>
-          
-              <div class="autoplay-progress" slot="container-end">
-                <svg viewBox="0 0 48 48">
-                  <circle cx="24" cy="24" r="20"></circle>
-                </svg>
-                <span></span>
-              </div>
             </swiper-container>
-          </section>
+        </section>
           
-    
-        <section id="Sites" style="height: 100vh; background-color: rgb(255, 255, 255);" >
+        <section id="Sites" class="sect_Sites" >
             <div class="container">
-                <div>
-                    Imagens
+                <div class="content">
+                    <div class="left box" >
+                        Imagens
+                    </div>
+                    <div class="rigth" >
+                        <img src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/icons/site-web.png" alt="">
+                        <h2>Sites</h2>
+                        <p>Aumente o sucesso do seu negócio com a webtagger!</p>
+                        <p>Conte com os serviços especializados da webtagger para criar sites e sistemas web personalizados. Nossa equipe experiente está pronta para desenvolver projetos únicos, gerando resultados tangíveis e impulsionando as conversões em vendas.</p>
+                        <p>Graças à nossa expertise em design e desenvolvimento, podemos criar sites modernos e profissionais que refletem a identidade da sua marca. Além disso, nossos sistemas web são feitos sob medida para aprimorar a comunicação e a eficiência da sua organização.</p>
+                        <p>Não deixe seu negócio ficar para trás. Confie na webtagger para criar projetos exclusivos que geram mais resultados e conversões em vendas.</p>
+                        <button class="btn-green" >
+                            Fazer orçamento
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
                 </div>
-                <h2>Sites</h2>
-                <p>Aumente o sucesso do seu negócio com a webtagger!</p>
-                <p>Conte com os serviços especializados da webtagger para criar sites e sistemas web personalizados. Nossa equipe experiente está pronta para desenvolver projetos únicos, gerando resultados tangíveis e impulsionando as conversões em vendas.</p>
-                <p>Graças à nossa expertise em design e desenvolvimento, podemos criar sites modernos e profissionais que refletem a identidade da sua marca. Além disso, nossos sistemas web são feitos sob medida para aprimorar a comunicação e a eficiência da sua organização.</p>
-                <p>Não deixe seu negócio ficar para trás. Confie na webtagger para criar projetos exclusivos que geram mais resultados e conversões em vendas.</p>
-                <button class="animated-button">
-                    <span>
-                        Fazer orçamento
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </span>
-                </button
             </div>
         </section>
     
-        <section id="Aplicativos" style="height: 100vh; background-color: rgb(157, 194, 26);" >
+        <section id="Aplicativos" class="sect_Aplicativos" >
             <div class="container">
-                <h2>Aplicativos</h2>
-                <p>Impulsione o crescimento do seu negócio com um aplicativo sob medida!</p>
-                <p>Invista no sucesso da sua startup ou empresa de médio e grande porte com os serviços especializados de criação de aplicativos oferecidos por nós. Nosso processo abrange um planejamento estrutural detalhado, desenvolvimento em etapas e suporte técnico contínuo. Além disso, estamos comprometidos em manter a sua ferramenta sempre atualizada e competitiva. Não perca tempo, impulsione o seu sucesso com um aplicativo personalizado.</p>
-                <button class="animated-button">
-                    <span>
-                        Fazer orçamento
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </span>
-                </button>
+                <div class="content">
+                    <div class="left">
+                        <h2>Aplicativos</h2>
+                        <p>Impulsione o crescimento do seu negócio com um aplicativo sob medida!</p>
+                        <p>Invista no sucesso da sua startup ou empresa de médio e grande porte com os serviços especializados de criação de aplicativos oferecidos por nós. Nosso processo abrange um planejamento estrutural detalhado, desenvolvimento em etapas e suporte técnico contínuo. Além disso, estamos comprometidos em manter a sua ferramenta sempre atualizada e competitiva. Não perca tempo, impulsione o seu sucesso com um aplicativo personalizado.</p>
+                        <button class="btn-yellow" >
+                            Fazer orçamento
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+                    <div class="rigth box">
+                    </div>
+                </div>
             </div>
         </section>
     
-        <section id="Sistemasemnuvem" style="height: 100vh; background-color: rgb(255, 0, 212);" >
+        <section id="Sistemasemnuvem" class="sect_Sistemasemnuvem">
             <div class="container">
-                <h2>Sistemas em nuvem</h2>
-                <p>Expanda seus negócios com soluções em nuvem!</p>
-                <p>Conte conosco para desenvolver projetos sob medida, integrar sistemas, implementar infraestrutura de servidor e fornecer suporte especializado. Nossa equipe atende médias e grandes empresas, oferecendo serviços de alta qualidade para impulsionar a eficiência e o sucesso dos seus negócios. Com a ajuda dos nossos especialistas experientes, você terá projetos personalizados, integração eficiente de sistemas, configuração adequada de infraestrutura de servidor e suporte técnico especializado, garantindo que você tenha todas as ferramentas necessárias para um crescimento contínuo.</p>
-                <p>Não perca tempo, invista em soluções personalizadas que atendam às suas necessidades.</p>
-                <button class="animated-button">
-                    <span>
-                        Fazer orçamento
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </span>
-                </button>
+                <div class="content">
+                    <div class="left box">
+
+                    </div>
+                    <div class="rigth">
+                        <h2>Sistemas em nuvem</h2>
+                        <p>Expanda seus negócios com soluções em nuvem!</p>
+                        <p>Conte conosco para desenvolver projetos sob medida, integrar sistemas, implementar infraestrutura de servidor e fornecer suporte especializado. Nossa equipe atende médias e grandes empresas, oferecendo serviços de alta qualidade para impulsionar a eficiência e o sucesso dos seus negócios. Com a ajuda dos nossos especialistas experientes, você terá projetos personalizados, integração eficiente de sistemas, configuração adequada de infraestrutura de servidor e suporte técnico especializado, garantindo que você tenha todas as ferramentas necessárias para um crescimento contínuo.</p>
+                        <p>Não perca tempo, invista em soluções personalizadas que atendam às suas necessidades.</p>
+                        <button class="btn-blue" >
+                            Fazer orçamento
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
     
-        <section id="E-commerce" style="height: 100vh; background-color: rgb(255, 0, 0);" >
+        <section id="E-commerce" class="sect_E-commerce">
             <div class="container">
-                <h2>E-commerce</h2>
-                <p>Potencialize suas vendas com um e-commerce eficiente e lucrativo!</p>
-                <p>Nosso time especializado oferece soluções personalizadas para impulsionar o crescimento do seu negócio online.</p>
-                <p>Desenvolvemos uma plataforma exclusiva, adaptada às suas necessidades, que proporciona uma experiência de compra fácil e intuitiva para seus clientes.</p>
-                <p>Além disso, realizamos integrações entre sistemas, garantindo uma gestão eficiente do estoque, processamento de pagamentos e logística. Nossa infraestrutura de servidor robusta assegura a estabilidade e segurança da sua loja virtual.</p>
-                <button class="animated-button">
-                    <span>
-                        Fazer orçamento
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </span>
-                </button>
+                <div class="content">
+                    <div class="left">
+                        <h2>E-commerce</h2>
+                        <p>Potencialize suas vendas com um e-commerce eficiente e lucrativo!</p>
+                        <p>Nosso time especializado oferece soluções personalizadas para impulsionar o crescimento do seu negócio online.</p>
+                        <p>Desenvolvemos uma plataforma exclusiva, adaptada às suas necessidades, que proporciona uma experiência de compra fácil e intuitiva para seus clientes.</p>
+                        <p>Além disso, realizamos integrações entre sistemas, garantindo uma gestão eficiente do estoque, processamento de pagamentos e logística. Nossa infraestrutura de servidor robusta assegura a estabilidade e segurança da sua loja virtual.</p>
+                        <button class="btn-red" >
+                            Fazer orçamento
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+                    <div class="rigth box">
+
+                    </div>
+                </div>
             </div>
         </section>
     
-        <section id="Hospedagem" style="height: 100vh; background-color: rgb(26, 8, 23);" >
+        <section id="Hospedagem" class="sect_Hospedagem" >
             <div class="container">
-                <h2>Hospedagem</h2>
-                <p>Tenha uma hospedagem confiável e de alto desempenho para o seu site!</p>
-                <p>Tenha soluções de hospedagem adaptadas às necessidades da sua empresa de médio e grande porte. Nossa equipe garante um serviço de qualidade, com uma infraestrutura de servidor robusta que garante alta disponibilidade e velocidade para o seu site.</p>
-                <p>Com nossos serviços de hospedagem, você pode ter a tranquilidade de saber que o seu site estará sempre online, proporcionando uma experiência superior aos visitantes.</p>
-                <p>Não deixe sua presença online comprometida, invista em uma hospedagem confiável e de alto desempenho.</p>
-                <button class="animated-button">
-                    <span>
-                        Fazer orçamento
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </span>
-                </button>
+                <div class="content">
+                    <div class="left box">
+
+                    </div>
+                    <div class="rigth">
+                        <h2>Hospedagem</h2>
+                        <p>Tenha uma hospedagem confiável e de alto desempenho para o seu site!</p>
+                        <p>Tenha soluções de hospedagem adaptadas às necessidades da sua empresa de médio e grande porte. Nossa equipe garante um serviço de qualidade, com uma infraestrutura de servidor robusta que garante alta disponibilidade e velocidade para o seu site.</p>
+                        <p>Com nossos serviços de hospedagem, você pode ter a tranquilidade de saber que o seu site estará sempre online, proporcionando uma experiência superior aos visitantes.</p>
+                        <p>Não deixe sua presença online comprometida, invista em uma hospedagem confiável e de alto desempenho.</p>
+                        <button class="animated-button">
+                            <span>
+                                Fazer orçamento
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
     
@@ -315,24 +347,264 @@
             </button>
         </section>
     
-        <section>
+        <section class="empresas">
             <div class="container">
-                Varias emrpesas
+                <h2 class="titulo">Empresas que confiam em nós</h2>
+                <div class="grade-logos">
+                <div class="logo-item">
+                    <img src="/img/brand/newAlba.svg" alt="Alba" />
+                    <div class="nome-empresa">Alba</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newBetonlab.svg" alt="Betonlab" />
+                    <div class="nome-empresa">Betonlab</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newCacife.svg" alt="Cacife" />
+                    <div class="nome-empresa">Cacife</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newCambc.svg" alt="Cambc" />
+                    <div class="nome-empresa">Cambc</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newDigital.svg" alt="Digital" />
+                    <div class="nome-empresa">Digital</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newFaculdade.svg" alt="Faculdade" />
+                    <div class="nome-empresa">Faculdade</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newFilterBras.svg" alt="FilterBras" />
+                    <div class="nome-empresa">FilterBras</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newFonseca.svg" alt="Fonseca" />
+                    <div class="nome-empresa">Fonseca</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newFrisul.svg" alt="Frisul" />
+                    <div class="nome-empresa">Frisul</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newIbn.svg" alt="Ibn" />
+                    <div class="nome-empresa">Ibn</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newJbl.svg" alt="Jbl" />
+                    <div class="nome-empresa">Jbl</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newMcm.svg" alt="Mcm" />
+                    <div class="nome-empresa">Mcm</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newMiranda.svg" alt="Miranda" />
+                    <div class="nome-empresa">Miranda</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newNannetti.svg" alt="Nannetti" />
+                    <div class="nome-empresa">Nannetti</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newNitida.svg" alt="Nitida" />
+                    <div class="nome-empresa">Nitida</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newNovaMinas.svg" alt="NovaMinas" />
+                    <div class="nome-empresa">NovaMinas</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newOctoBrazil.svg" alt="OctoBrazil" />
+                    <div class="nome-empresa">OctoBrazil</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newOncominas.svg" alt="Oncominas" />
+                    <div class="nome-empresa">Oncominas</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newSchulzCampos.svg" alt="SchulzCampos" />
+                    <div class="nome-empresa">SchulzCampos</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newSeltec.svg" alt="Seltec" />
+                    <div class="nome-empresa">Seltec</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newSeul.svg" alt="Seul" />
+                    <div class="nome-empresa">Seul</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newSeuResultado.svg" alt="SeuResultado" />
+                    <div class="nome-empresa">SeuResultado</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newSoliton.svg" alt="Soliton" />
+                    <div class="nome-empresa">Soliton</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newSolled.svg" alt="Solled" />
+                    <div class="nome-empresa">Solled</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newTmt.svg" alt="Tmt" />
+                    <div class="nome-empresa">Tmt</div>
+                </div>
+                <div class="logo-item">
+                    <img src="/img/brand/newTropicalFood.svg" alt="TropicalFood" />
+                    <div class="nome-empresa">TropicalFood</div>
+                </div>
+                </div>
             </div>
         </section>
-    
-        <section id="Contato" style="height: 100vh; background-color: rgb(76, 0, 255);" >
+          
+          
+
+        <section class="avaliacoes">
             <div class="container">
-                Webtagger
-    
-                Pouso Alegre, Minas Gerais, Brasil
-    
-                instagram
-                @webtagger
-                +55 (35) 99858-7371
-                23.270.847/0001-91
+                <h2 class="titulo">Avaliações dos nossos clientes</h2>
+            
+                <div class="cards">
+                <!-- Avaliação 1 -->
+                <div class="card">
+                    <div class="perfil">
+                    <div class="avatar">A</div>
+                    <div class="info">
+                        <p class="nome">Ahlex Van der All</p>
+                        <p class="tempo">3 meses atrás</p>
+                    </div>
+                    </div>
+                    <div class="estrelas">★★★★★</div>
+                    <p class="comentario">Hospedo meus site e emails com eles.</p>
+                </div>
+            
+                <!-- Avaliação 2 -->
+                <div class="card">
+                    <div class="perfil">
+                    <div class="avatar">G</div>
+                    <div class="info">
+                        <p class="nome">Giovane Ricardo <span>(Auto Socorro jacaré 381)</span></p>
+                        <p class="tempo">7 meses atrás</p>
+                    </div>
+                    </div>
+                    <div class="estrelas">★★★★★</div>
+                    <p class="comentario">Fiz meu site com eles.</p>
+                </div>
+            
+                <!-- Avaliação 3 -->
+                <div class="card">
+                    <div class="perfil">
+                    <div class="avatar">S</div>
+                    <div class="info">
+                        <p class="nome">Saulo Andrade Araújo</p>
+                        <p class="tempo">5 anos atrás</p>
+                    </div>
+                    </div>
+                    <div class="estrelas">★★★★★</div>
+                    <p class="comentario">Excelente serviço. Ficou muito bonito nosso site.</p>
+                </div>
+                </div>
             </div>
         </section>
+          
+    
+        <footer id="Contato" class="site-footer" >
+            <div class="footer-top container">
+                <div class="footer-brand">
+                    <!-- substitua pelo seu logo -->
+                    <a href="/index.html" class="div_logo" >
+                        <img src="/img/logoWebtagger.png" alt="Logo WebTagger">
+                        <span>webtagger</span>
+                    </a>
+                    <p>Por mais de 18 anos a Webtagger é sinônimo de competência e inovação em desenvolvimento web em Pouso Alegre.</p>
+                </div>
+            
+                <nav class="footer-nav">
+                    <h6>Navegue</h6>
+                    <div class="nav-columns">
+                        <ul>
+                            <li>
+                                <a href="#Home">
+                                    <i class="fa-solid fa-house"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Cases">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    Cases
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Sites">
+                                    <i class="fa-solid fa-globe"></i>
+                                    Sites
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Aplicativos">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    Aplicativos
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#Sistemasemnuvem">
+                                    <i class="fa-solid fa-cloud"></i>
+                                    Sistemas em nuvem
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#E-commerce">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    E-commerce
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Hospedagem">
+                                    <i class="fa-solid fa-server"></i>
+                                    Hospedagem
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Contato">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Contato
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            
+                <div class="footer-location">
+                    <h6>Onde estamos</h6>
+                    <p>Pouso Alegre, Centro – MG, Brasil</p>
+                    <p>R. Afonso Pena, 245 – ap 201 </p>
+                    <p>37550-000</p>
+
+                </div>
+
+                <div class="footer-contact">
+                    <h6>Siga nas redes</h6>
+                    <div class="socials">
+                        <a href="https://instagram.com/webtagger" class="icon-instagram" target="_blank">@webtagger</a>
+                    </div>
+
+                    <h6>Fale conosco</h6>
+                    <p>
+                        <a href="mailto:atendimento@webtagger.com.br" class="icon-mail">atendimento@webtagger.com.br</a><br/>
+                        <a href="tel:+5535998587371" class="icon-phone">+55 (35) 99858-7371</a>
+                    </p>
+                </div>
+            </div>
+                
+            <div class="footer-bottom container">
+                <small>© Webtagger — CNPJ 23.270.847/0001-91 — Todos os direitos reservados.</small>
+                <small>Desenvolvido por <a href="https://luixzsouza.com.br" target="_blank"><img src="/img/luizsouza-developer.png" alt=""></a></small>
+            </div>
+        </footer>
     </main>
 
     <div class="menu-overlay"></div>
@@ -406,7 +678,7 @@
         </button>
     </div>
 
-    <script src="/script.js" ></script>
+    <script src="/js/script.js" ></script>
     <script src="https://kit.fontawesome.com/ed4d698bbc.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
