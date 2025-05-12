@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- css -->
      <link rel="stylesheet" href="/css/style.css">
+
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
     <header> 
@@ -93,11 +95,12 @@
             <div class="container">
                 <div class="content_Home" >
                     <div class="content_left_Home" >
-                        <h1>Desenvolvemos websites, aplicativos e sistemas web que <strong>transformam</strong><br/> sua <strong>empresa</strong> </h1>
-                        <p>A Webtagger traz soluções inteligentes e personalizadas de sites, aplicativos, CRMs, <br/> ERP'S e sistemas sob medida para empresas de Pouso Alegre e região.</p>
-                        <div class="contet_Home_Butttons" >
+                        <h1 data-aos="fade-right" >Desenvolvemos websites, aplicativos e sistemas web que <strong>transformam</strong><br/> sua <strong>empresa</strong> </h1>
+                        <p data-aos="fade-right" data-aos-delay="100" >A Webtagger traz soluções inteligentes e personalizadas de sites, aplicativos, CRMs, <br/> ERP'S e sistemas sob medida para empresas de Pouso Alegre e região.</p>
+                        <div data-aos="fade-right" data-aos-delay="200" class="contet_Home_Butttons" >
                             
-                            <button class="animated-button filled">
+                            <button class="button-follow animated-button filled">
+                                <span class="ball blueDark-ball"></span>
                                 <span>
                                     O que fazemos
                                     <i class="fa-solid fa-circle-question"></i>
@@ -112,29 +115,127 @@
                         </div>
                     </div>
                     <div class="content_Rigth_Home" >
-                        <img src="/img/mockups/Home.png" alt="Bradge Home">
+                        <img data-aos="fade-up" src="/img/mockups/Home.png" alt="Bradge Home">
+                        <div class="cardLocal">
+                            <div class="menu-top">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </div>
+                            <div class="card-content">
+                                <div class="top">
+                                    <span>Local</span>
+                                    <div class="cidade">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <small>São Paulo</small>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <h6>Hotel São Paulo</h6>
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardReceita">
+                            <div class="menu-top">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </div>
+                            <div class="card-content">
+                                <div class="texts">
+                                    <span>RECEITA</span>
+                                    <h6 id="valorReceita" >R$4.820,00</h6>
+                                    <ul>
+                                        <li class="active" >Dia</li>
+                                        <li>Mês</li>
+                                        <li>Ano</li>
+                                    </ul>
+                                </div>
+                                <div class="map">
+                                    <img src="/img/mockups/map.png" alt="Local Mapa">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardTimer">
+                            <div class="menu-top">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </div>
+                            <div class="card-content">
+                                <span>
+                                    <i class="fa-solid fa-bolt"></i>
+                                    CARREGAMENTO
+                                </span>
+                            
+                                <!-- Barra de progresso -->
+                                <div class="progress-wrap">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            
+                                <!-- Status que muda ao final -->
+                                <h6 id="statusCarga">
+                                    <i class="fa-solid fa-spinner fa-spin"></i>
+                                    Carregando...
+                                </h6>
+                                <i id="reloadBtn" class="fa-solid fa-rotate-right reload-btn" title="Recarregar"></i>
+
+                            </div>
+                        </div>
+                        <div class="cardVisits">
+                            <div class="menu-top">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </div>
+                            <div class="card-content">
+                                <span>
+                                    <i class="fa-solid fa-users"></i>
+                                    Visitas
+                                </span>
+                                <h6 id="valorVisitas">342</h6>
+                                <ul>
+                                    <li class="active">Dia</li>
+                                    <li>Mês</li>
+                                    <li>Ano</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     
-        <section class="sect_Numbers" >
+        <section class="sect_Numbers">
             <div class="container">
-                <ul>
-                    <li>
-                        <h4>
-                            <span>18+</span>anos de experiência
+                <ul class="stats-list">
+                    <li data-aos="zoom-in-up" data-aos-delay="100" class="stat-item">
+                        <div class="stat-icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <h4 class="stat-value">
+                        <span>18+</span> anos de experiência
                         </h4>
+                        <p class="stat-text">Entregando resultados consistentes desde 2007</p>
                     </li>
-                    <li>
-                        <h4>
-                            <span>500.000</span> usuários diários
+                    <li data-aos="zoom-in-up" class="stat-item">
+                        <div class="stat-icon">
+                        <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h4 class="stat-value">
+                        <span>500.000</span> usuários diários
                         </h4>
+                        <p class="stat-text">Confiando nas nossas soluções todos os dias</p>
                     </li>
-                    <li>
-                        <h4>
-                            <span>600+</span> empresas atendidas
+                    <li data-aos="zoom-in-up" data-aos-delay="100" class="stat-item">
+                        <div class="stat-icon">
+                        <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h4 class="stat-value">
+                        <span>600+</span> empresas atendidas
                         </h4>
+                        <p class="stat-text">Parceiras de diversos segmentos e portes</p>
                     </li>
                 </ul>
             </div>
@@ -143,12 +244,12 @@
         <section id="Cases" class="sect_Cases" >
             <div class="container">
                 <div class="case_1">
-                  <span>PROJETOS</span>
-                  <h2>Cases de Sucesso</h2>
+                  <span data-aos="fade-down" data-aos-delay="100" >PROJETOS</span>
+                  <h2 data-aos="fade-down" >Cases de Sucesso</h2>
                 </div>
             </div>
           
-            <swiper-container class=" mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30" slides-per-view="3"
+            <swiper-container data-aos="fade-up" data-aos-duration="2000" id="meuSwiper" class=" mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30" slides-per-view="3"
               centered-slides="true" autoplay-delay="3500" autoplay-disable-on-interaction="true" loop="true" effect="coverflow" coverflow-effect-slide-shadows="false">
           
                 <swiper-slide>
@@ -232,20 +333,24 @@
             </swiper-container>
         </section>
           
-        <section id="Sites" class="sect_Sites" >
+        <section data-aos="fade-up" id="Sites" class="sect_Sites" >
             <div class="container">
                 <div class="content">
-                    <div class="left box" >
-                        Imagens
+                    <div data-aos="zoom-in" data-aos-delay="200" class="left box" >
+                        <img class="mk1" src="/img/mockups/sites-1.png" alt="Mockups de Site">
+                        <img class="mk2" src="/img/mockups/sites-2.png" alt="Mockups de Site">
+                        <img class="mk3" src="/img/mockups/sites-3.png" alt="Mockups de Site">
+                        <img class="mk4" src="/img/mockups/sites-4.svg" alt="Mockups de Site">
                     </div>
-                    <div class="rigth" >
-                        <img src="https://webtagger.com.br/wp-content/themes/SiteWebtaggerWp/assets/img/icons/site-web.png" alt="">
-                        <h2>Sites</h2>
-                        <p>Aumente o sucesso do seu negócio com a webtagger!</p>
-                        <p>Conte com os serviços especializados da webtagger para criar sites e sistemas web personalizados. Nossa equipe experiente está pronta para desenvolver projetos únicos, gerando resultados tangíveis e impulsionando as conversões em vendas.</p>
-                        <p>Graças à nossa expertise em design e desenvolvimento, podemos criar sites modernos e profissionais que refletem a identidade da sua marca. Além disso, nossos sistemas web são feitos sob medida para aprimorar a comunicação e a eficiência da sua organização.</p>
-                        <p>Não deixe seu negócio ficar para trás. Confie na webtagger para criar projetos exclusivos que geram mais resultados e conversões em vendas.</p>
-                        <button class="btn-green" >
+                    <div data-aos="fade-up" data-aos-delay="400" class="rigth" >
+                        <img data-aos="flip-down" src="/img/icons/site-web.png" alt="">
+                        <h2 data-aos="fade-down" data-aos-delay="600">Sites</h2>
+                        <p data-aos="fade-up" data-aos-delay="400" >Aumente o sucesso do seu negócio com a webtagger!</p>
+                        <p data-aos="fade-up" data-aos-delay="500">Conte com os serviços especializados da webtagger para criar sites e sistemas web personalizados. Nossa equipe experiente está pronta para desenvolver projetos únicos, gerando resultados tangíveis e impulsionando as conversões em vendas.</p>
+                        <p data-aos="fade-up" data-aos-delay="600">Graças à nossa expertise em design e desenvolvimento, podemos criar sites modernos e profissionais que refletem a identidade da sua marca. Além disso, nossos sistemas web são feitos sob medida para aprimorar a comunicação e a eficiência da sua organização.</p>
+                        <p data-aos="fade-up" data-aos-delay="700">Não deixe seu negócio ficar para trás. Confie na webtagger para criar projetos exclusivos que geram mais resultados e conversões em vendas.</p>
+                        <button  data-aos="zoom-in" data-aos-delay="900" class="button-follow btn-green" >
+                            <span class="ball green-ball"></span>
                             Fazer orçamento
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
@@ -254,36 +359,47 @@
             </div>
         </section>
     
-        <section id="Aplicativos" class="sect_Aplicativos" >
+        <section data-aos="fade-up" id="Aplicativos" class="sect_Aplicativos" >
             <div class="container">
                 <div class="content">
-                    <div class="left">
-                        <h2>Aplicativos</h2>
-                        <p>Impulsione o crescimento do seu negócio com um aplicativo sob medida!</p>
-                        <p>Invista no sucesso da sua startup ou empresa de médio e grande porte com os serviços especializados de criação de aplicativos oferecidos por nós. Nosso processo abrange um planejamento estrutural detalhado, desenvolvimento em etapas e suporte técnico contínuo. Além disso, estamos comprometidos em manter a sua ferramenta sempre atualizada e competitiva. Não perca tempo, impulsione o seu sucesso com um aplicativo personalizado.</p>
-                        <button class="btn-yellow" >
+                    <div data-aos="fade-right" class="left">
+                        <img data-aos="flip-left" src="/img/icons/aplicativo-yellow.png" alt="Icon Aplicativo">
+                        <h2 data-aos="fade-down" data-aos-delay="200">Aplicativos</h2>
+                        <p data-aos="fade-up" data-aos-delay="600">Impulsione o crescimento do seu negócio com um aplicativo sob medida!</p>
+                        <p data-aos="fade-up" data-aos-delay="700">Invista no sucesso da sua startup ou empresa de médio e grande porte com os serviços especializados de criação de aplicativos oferecidos por nós. Nosso processo abrange um planejamento estrutural detalhado, desenvolvimento em etapas e suporte técnico contínuo. Além disso, estamos comprometidos em manter a sua ferramenta sempre atualizada e competitiva. Não perca tempo, impulsione o seu sucesso com um aplicativo personalizado.</p>
+                        <button data-aos="zoom-in" data-aos-delay="500" class="button-follow btn-yellow" >
+                            <span class="ball yellow-ball"></span>
                             Fazer orçamento
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
-                    <div class="rigth box">
+                    <div data-aos="zoom-in" data-aos-delay="400" class="rigth box">
+                        <img class="mk1" src="/img/mockups/aplicativos-1.png" alt="Mockups de Aplicativos">
+                        <img class="mk2" src="/img/mockups/aplicativos-2.png" alt="Mockups de Aplicativos">
+                        <img class="mk3" src="/img/mockups/aplicativos-3.png" alt="Mockups de Aplicativos">
+                        <img class="mk4" src="/img/mockups/aplicativos-4.png" alt="Mockups de Aplicativos">
                     </div>
                 </div>
             </div>
         </section>
     
-        <section id="Sistemasemnuvem" class="sect_Sistemasemnuvem">
+        <section data-aos="fade-up" id="Sistemasemnuvem" class="sect_Sistemasemnuvem">
             <div class="container">
                 <div class="content">
-                    <div class="left box">
-
+                    <div class="left box" data-aos="zoom-in" data-aos-delay="200">
+                        <img class="mk1" src="/img/mockups/sistema-nuvem-1.png" alt="Mockups de Sistema na nuvem">
+                        <img class="mk2" src="/img/mockups/sistema-nuvem-2.png" alt="Mockups de Sistema na nuvem">
+                        <img class="mk3" src="/img/mockups/sistema-nuvem-3.png" alt="Mockups de Sistema na nuvem">
+                        <img class="mk4" src="/img/mockups/sistema-nuvem-4.png" alt="Mockups de Sistema na nuvem">
                     </div>
-                    <div class="rigth">
-                        <h2>Sistemas em nuvem</h2>
-                        <p>Expanda seus negócios com soluções em nuvem!</p>
-                        <p>Conte conosco para desenvolver projetos sob medida, integrar sistemas, implementar infraestrutura de servidor e fornecer suporte especializado. Nossa equipe atende médias e grandes empresas, oferecendo serviços de alta qualidade para impulsionar a eficiência e o sucesso dos seus negócios. Com a ajuda dos nossos especialistas experientes, você terá projetos personalizados, integração eficiente de sistemas, configuração adequada de infraestrutura de servidor e suporte técnico especializado, garantindo que você tenha todas as ferramentas necessárias para um crescimento contínuo.</p>
-                        <p>Não perca tempo, invista em soluções personalizadas que atendam às suas necessidades.</p>
-                        <button class="btn-blue" >
+                    <div data-aos="fade-up" data-aos-delay="400" class="rigth">
+                        <img data-aos="flip-down" src="/img/icons/nuvem-blue.png" alt="Icon Nuvem">
+                        <h2 data-aos="fade-down" data-aos-delay="600" >Sistemas em nuvem</h2>
+                        <p data-aos="fade-up" data-aos-delay="400" >Expanda seus negócios com soluções em nuvem!</p>
+                        <p data-aos="fade-up" data-aos-delay="500">Conte conosco para desenvolver projetos sob medida, integrar sistemas, implementar infraestrutura de servidor e fornecer suporte especializado. Nossa equipe atende médias e grandes empresas, oferecendo serviços de alta qualidade para impulsionar a eficiência e o sucesso dos seus negócios. Com a ajuda dos nossos especialistas experientes, você terá projetos personalizados, integração eficiente de sistemas, configuração adequada de infraestrutura de servidor e suporte técnico especializado, garantindo que você tenha todas as ferramentas necessárias para um crescimento contínuo.</p>
+                        <p data-aos="fade-up" data-aos-delay="700">Não perca tempo, invista em soluções personalizadas que atendam às suas necessidades.</p>
+                        <button data-aos="zoom-in" data-aos-delay="900" class="button-follow btn-blue" >
+                            <span class="ball blue-ball"></span>
                             Fazer orçamento
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
@@ -292,40 +408,49 @@
             </div>
         </section>
     
-        <section id="E-commerce" class="sect_E-commerce">
+        <section data-aos="fade-up" id="E-commerce" class="sect_E-commerce" data-aos="fade-up">
             <div class="container">
                 <div class="content">
-                    <div class="left">
-                        <h2>E-commerce</h2>
-                        <p>Potencialize suas vendas com um e-commerce eficiente e lucrativo!</p>
-                        <p>Nosso time especializado oferece soluções personalizadas para impulsionar o crescimento do seu negócio online.</p>
-                        <p>Desenvolvemos uma plataforma exclusiva, adaptada às suas necessidades, que proporciona uma experiência de compra fácil e intuitiva para seus clientes.</p>
-                        <p>Além disso, realizamos integrações entre sistemas, garantindo uma gestão eficiente do estoque, processamento de pagamentos e logística. Nossa infraestrutura de servidor robusta assegura a estabilidade e segurança da sua loja virtual.</p>
-                        <button class="btn-red" >
+                    <div class="left" data-aos="fade-right">
+                        <img data-aos="flip-left" src="/img/icons/e-commerce-red.png" alt="Icon E-commerce">
+                        <h2 data-aos="fade-down" data-aos-delay="200">E-commerce</h2>
+                        <p data-aos="fade-up" data-aos-delay="400">Potencialize suas vendas com um e-commerce eficiente e lucrativo!</p>
+                        <p data-aos="fade-up" data-aos-delay="300">Nosso time especializado oferece soluções personalizadas para impulsionar o crescimento do seu negócio online.</p>
+                        <p data-aos="fade-up" data-aos-delay="200">Desenvolvemos uma plataforma exclusiva, adaptada às suas necessidades, que proporciona uma experiência de compra fácil e intuitiva para seus clientes.</p>
+                        <p data-aos="fade-up" data-aos-delay="100">Além disso, realizamos integrações entre sistemas, garantindo uma gestão eficiente do estoque, processamento de pagamentos e logística. Nossa infraestrutura de servidor robusta assegura a estabilidade e segurança da sua loja virtual.</p>
+                        <button data-aos="zoom-in" data-aos-delay="500" class="button-follow btn-red" >
+                            <span class="ball red-ball"></span>
                             Fazer orçamento
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
-                    <div class="rigth box">
-
+                    <div data-aos="zoom-in" data-aos-delay="400" class="rigth box">
+                        <img class="mk1" src="/img/mockups/e-commerce-1.png" alt="Mockups de E-commerce">
+                        <img class="mk2" src="/img/mockups/e-commerce-2.png" alt="Mockups de E-commerce">
+                        <img class="mk3" src="/img/mockups/e-commerce-3.png" alt="Mockups de E-commerce">
+                        <img class="mk4" src="/img/mockups/e-commerce-4.png" alt="Mockups de E-commerce">
                     </div>
                 </div>
             </div>
         </section>
     
-        <section id="Hospedagem" class="sect_Hospedagem" >
+        <section data-aos="fade-up" id="Hospedagem" class="sect_Hospedagem" >
             <div class="container">
                 <div class="content">
-                    <div class="left box">
-
+                    <div data-aos="zoom-in" data-aos-delay="200" class="left box">
+                        <img class="mk1" src="/img/mockups/hosp-1.png" alt="Mockups da Hospedagem">
+                        <img class="mk2" src="/img/mockups/hosp-2.png" alt="Mockups da Hospedagem">
+                        <img class="mk3" src="/img/mockups/hosp-3.png" alt="Mockups da Hospedagem">
+                        <img class="mk4" src="/img/mockups/hosp-4.png" alt="Mockups da Hospedagem">
                     </div>
-                    <div class="rigth">
-                        <h2>Hospedagem</h2>
-                        <p>Tenha uma hospedagem confiável e de alto desempenho para o seu site!</p>
-                        <p>Tenha soluções de hospedagem adaptadas às necessidades da sua empresa de médio e grande porte. Nossa equipe garante um serviço de qualidade, com uma infraestrutura de servidor robusta que garante alta disponibilidade e velocidade para o seu site.</p>
-                        <p>Com nossos serviços de hospedagem, você pode ter a tranquilidade de saber que o seu site estará sempre online, proporcionando uma experiência superior aos visitantes.</p>
-                        <p>Não deixe sua presença online comprometida, invista em uma hospedagem confiável e de alto desempenho.</p>
-                        <button class="animated-button">
+                    <div  data-aos="fade-up" data-aos-delay="400" class="rigth">
+                        <img data-aos="flip-down" src="/img/icons/hospedagem-cinza.png" alt="">
+                        <h2 data-aos="fade-down" data-aos-delay="600">Hospedagem</h2>
+                        <p data-aos="fade-up" data-aos-delay="400">Tenha uma hospedagem confiável e de alto desempenho para o seu site!</p>
+                        <p data-aos="fade-up" data-aos-delay="500">Tenha soluções de hospedagem adaptadas às necessidades da sua empresa de médio e grande porte. Nossa equipe garante um serviço de qualidade, com uma infraestrutura de servidor robusta que garante alta disponibilidade e velocidade para o seu site.</p>
+                        <p data-aos="fade-up" data-aos-delay="600">Com nossos serviços de hospedagem, você pode ter a tranquilidade de saber que o seu site estará sempre online, proporcionando uma experiência superior aos visitantes.</p>
+                        <p data-aos="fade-up" data-aos-delay="700">Não deixe sua presença online comprometida, invista em uma hospedagem confiável e de alto desempenho.</p>
+                        <button data-aos="zoom-in" data-aos-delay="900" class="animated-button">
                             <span>
                                 Fazer orçamento
                                 <i class="fa-solid fa-cart-shopping"></i>
@@ -335,27 +460,55 @@
                 </div>
             </div>
         </section>
-    
-        <section class="sect_Tecnolog" >
-            <h2><strong>Trabalhamos com as</strong> mais novas tecnologias</h2>
-            <p>Temos planos mensais que cabem no seu bolso Faça um orçamento</p>
-            <button class="animated-button">
-                <span>
-                    Fazer orçamento
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </span>
-            </button>
+        
+        <section class="sect_Tecnolog">
+            <div class="content-infos">
+                <h2 data-aos="fade-up" ><strong>Trabalhamos com as</strong> mais novas tecnologias</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Temos planos mensais que cabem no seu bolso. Faça um orçamento:</p>
+                <button data-aos="zoom-in" data-aos-delay="200" class="animated-button">
+                    <span>Fazer orçamento <i class="fa-solid fa-cart-shopping"></i></span>
+                </button>
+            </div>
+            
             <div class="content-icons-absolute">
                 <div class="content-icons">
-                    <img class="img-1" src="/img/icons/apache.svg" alt="">
-                    <img class="img-2" src="/img/icons/docker.svg" alt="">
-                    <img class="img-3" src="/img/icons/javascript.svg" alt="">
-                    <img class="img-4" src="/img/icons/laravel.svg" alt="">
-                    <img class="img-5" src="/img/icons/linux.png" alt="">
-                    <img class="img-6" src="/img/icons/node.svg" alt="">
-                    <img class="img-7" src="/img/icons/php.svg" alt="">
-                    <img class="img-8" src="/img/icons/siwft.png" alt="">
-                    <img class="img-9" src="/img/icons/wp.svg" alt="">
+                <!-- Cada tech-item mantém a posição absoluta original -->
+                <div class="tech-item img-1" data-code="httpd -k restart" data-lang="Apache">
+                    <img src="/img/icons/apache.svg" alt="Apache" />
+                    <div class="tooltip"><code></code></div>
+                </div>
+                <div class="tech-item img-2" data-code="docker run hello-world" data-lang="Docker">
+                    <img src="/img/icons/docker.svg" alt="Docker" />
+                    <div class="tooltip"><code></code></div>
+                </div>
+                <div class="tech-item img-3" data-code="console.log('Olá Mundo');" data-lang="JavaScript">
+                    <img src="/img/icons/javascript.svg" alt="JavaScript" />
+                    <div class="tooltip"><code></code></div>
+                </div>
+                <div class="tech-item img-4" data-code="php artisan serve" data-lang="Laravel">
+                    <img src="/img/icons/laravel.svg" alt="Laravel" />
+                    <div class="tooltip"><code></code></div>
+                </div>
+                <div class="tech-item img-5" data-code="ls -la" data-lang="Linux">
+                    <img src="/img/icons/linux.png" alt="Linux" />
+                    <div class="tooltip"><code></code></div>
+                </div>
+                <div class="tech-item img-6" data-code="node hello_world.js" data-lang="Node.js">
+                    <img src="/img/icons/node.svg" alt="Node.js" />
+                    <div class="tooltip"><code></code></div>
+                </div>
+                <div class="tech-item img-7" data-code='?php echo "Olá Mundo PHP!"; ' data-lang="PHP">
+                    <img src="/img/icons/php.svg" alt="PHP" />
+                    <div class="tooltip"><code></code></div>
+                </div>
+                <div class="tech-item img-8" data-code='print(\"Olá Swift\")' data-lang="Swift">
+                    <img src="/img/icons/siwft.png" alt="Swift" />
+                    <div class="tooltip"><code></code></div>
+                </div>
+                <div class="tech-item img-9" data-code="wp plugin list" data-lang="WordPress">
+                    <img src="/img/icons/wp.svg" alt="WordPress" />
+                    <div class="tooltip"><code></code></div>
+                </div>
                 </div>
             </div>
         </section>
@@ -474,48 +627,62 @@
 
         <section class="avaliacoes">
             <div class="container">
-                <h2 class="titulo">Avaliações dos nossos clientes</h2>
+                <h2 data-aos="fade-up" class="titulo">Avaliações dos nossos clientes</h2>
             
                 <div class="cards">
-                <!-- Avaliação 1 -->
-                <div class="card">
-                    <div class="perfil">
-                    <div class="avatar">A</div>
-                    <div class="info">
-                        <p class="nome">Ahlex Van der All</p>
-                        <p class="tempo">3 meses atrás</p>
+                    <!-- Avaliação 1 -->
+                    <div data-aos="fade-right" data-aos-delay="100" class="card">
+                        <div class="perfil">
+                        <div class="avatar avatar-red">A</div>
+                        <div class="info">
+                            <p class="nome">Ahlex Van der All</p>
+                            <p class="tempo">3 meses atrás</p>
+                        </div>
+                        </div>
+                        <div class="estrelas">★★★★★</div>
+                        <p class="comentario">Hospedo meus site e emails com eles.</p>
                     </div>
+                
+                    <!-- Avaliação 2 -->
+                    <div data-aos="fade-right" data-aos-delay="200" class="card">
+                        <div class="perfil">
+                        <div class="avatar avatar-verde">G</div>
+                        <div class="info">
+                            <p class="nome">Giovane Ricardo <span>(Auto Socorro jacaré 381)</span></p>
+                            <p class="tempo">7 meses atrás</p>
+                        </div>
+                        </div>
+                        <div class="estrelas">★★★★★</div>
+                        <p class="comentario">Fiz meu site com eles.</p>
                     </div>
-                    <div class="estrelas">★★★★★</div>
-                    <p class="comentario">Hospedo meus site e emails com eles.</p>
+                
+                    <!-- Avaliação 3 -->
+                    <div data-aos="fade-right" data-aos-delay="300" class="card">
+                        <div class="perfil">
+                        <div class="avatar avatar-marrom">S</div>
+                        <div class="info">
+                            <p class="nome">Saulo Andrade Araújo</p>
+                            <p class="tempo">5 anos atrás</p>
+                        </div>
+                        </div>
+                        <div class="estrelas">★★★★★</div>
+                        <p class="comentario">Excelente serviço. Ficou muito bonito nosso site.</p>
+                    </div>
                 </div>
-            
-                <!-- Avaliação 2 -->
-                <div class="card">
-                    <div class="perfil">
-                    <div class="avatar">G</div>
-                    <div class="info">
-                        <p class="nome">Giovane Ricardo <span>(Auto Socorro jacaré 381)</span></p>
-                        <p class="tempo">7 meses atrás</p>
-                    </div>
-                    </div>
-                    <div class="estrelas">★★★★★</div>
-                    <p class="comentario">Fiz meu site com eles.</p>
-                </div>
-            
-                <!-- Avaliação 3 -->
-                <div class="card">
-                    <div class="perfil">
-                    <div class="avatar">S</div>
-                    <div class="info">
-                        <p class="nome">Saulo Andrade Araújo</p>
-                        <p class="tempo">5 anos atrás</p>
-                    </div>
-                    </div>
-                    <div class="estrelas">★★★★★</div>
-                    <p class="comentario">Excelente serviço. Ficou muito bonito nosso site.</p>
-                </div>
-                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <img data-aos="zoom-in" data-aos-delay="100" class="brandAnos" src="/img/BrandAnos.png" alt="BrandAnos">
+            <div  data-aos="fade-up" class="cta-content">
+                <h2 class="cta-title">Leve seu negócio para o digital com a WebTagger</h2>
+                <p class="cta-subtitle">Sites rápidos, bonitos e prontos para converter. Solicite seu orçamento sem compromisso.</p>
+                <button data-aos="zoom-in-up" data-aos-delay="300" class="animated-button">
+                    <span>
+                        Fazer orçamento
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                </button>
             </div>
         </section>
     
@@ -611,8 +778,11 @@
             </div>
                 
             <div class="footer-bottom container">
-                <small>© Webtagger — CNPJ 23.270.847/0001-91 — Todos os direitos reservados.</small>
-                <small>Desenvolvido por <a href="https://luixzsouza.com.br" target="_blank"><img src="/img/luizsouza-developer.png" alt=""></a></small>
+                <small>© 2025 WebTagger. Projeto fictício criado para fins de estudo e demonstração de habilidades em desenvolvimento web.</small>
+                <div class="dev">
+                    <small>Desenvolvido por: </small>
+                    <a href="https://luixzsouza.com.br" target="_blank"><img src="/img/luizsouza-developer.png" alt=""></a>
+                </div>
             </div>
         </footer>
     </main>
@@ -688,6 +858,14 @@
         </button>
     </div>
 
+    <a class="whatsapp-button" href="https://wa.me/SEUNUMERO" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+        <span>Solicite um Orçamento!</span>
+        <div class="whatsapp-ping"></div>
+      </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      
     <script src="/js/script.js" ></script>
     <script src="https://kit.fontawesome.com/ed4d698bbc.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
