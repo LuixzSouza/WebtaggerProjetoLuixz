@@ -42,10 +42,14 @@ cd webtagger-situacao
 Abrir localmente (sem Docker):
 - Abra o arquivo index.html no navegador.
 
+🐳 Passo a passo com Docker
 Com Docker (opcional):
 ```
-docker build -t webtagger-situacao .
-docker run -p 8080:80 webtagger-situacao
+cd webtagger
+
+docker build -t projetowebtagger .
+
+docker run -p 8080:80 projetowebtagger
 ```
 Acesse http://localhost:8080.
 
