@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webtagger - ProjetoLuixz | Criação de sites, aplicativos e software</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <!-- Fontes -->
-    <!-- Roboto -->
+
+    <!-- Fontes Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- css -->
-     <link rel="stylesheet" href="/css/style.css">
-
-     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    
+    <!-- css & css AOS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
     <header> 
@@ -37,23 +37,17 @@
                                 Cases
                             </a>
                         </li>
-                        <li>
-                            <a href="#Sites">
-                                <i class="fa-solid fa-globe"></i>
-                                Sites
+                        <li class="dropdown">
+                            <a href="#">
+                                <i class="fa-solid fa-layer-group"></i>
+                                Soluções
+                                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
                             </a>
-                        </li>
-                        <li>
-                            <a href="#Aplicativos">
-                                <i class="fa-solid fa-mobile-screen-button"></i>
-                                Aplicativos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Sistemasemnuvem">
-                                <i class="fa-solid fa-cloud"></i>
-                                Sistemas em nuvem
-                            </a>
+                            <ul class="dropdown-content">
+                                <li><a href="#Sites"><i class="fa-solid fa-globe"></i> Sites</a></li>
+                                <li><a href="#Aplicativos"><i class="fa-solid fa-mobile-screen-button"></i> Aplicativos</a></li>
+                                <li><a href="#Sistemasemnuvem"><i class="fa-solid fa-cloud"></i> Sistemas em nuvem</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#E-commerce">
@@ -75,6 +69,7 @@
                         </li>
                     </ul>
                 </nav>
+                
                 <div class="buttons" >
                     <button class="animated-button">
                         <span>
@@ -315,21 +310,6 @@
                         </div>
                     </div>
                 </swiper-slide>
-
-                <!-- contêiner de paginação -->
-                <div class="minha-pagination"></div>
-
-                <!-- setas customizadas -->
-                <div class="minha-prev"></div>
-                <div class="minha-next"></div>
-
-                <!-- progresso de autoplay continua aqui -->
-                <div class="autoplay-progress" slot="container-end">
-                    <svg viewBox="0 0 48 48">
-                    <circle cx="24" cy="24" r="20"></circle>
-                    </svg>
-                    <span></span>
-                </div>
             </swiper-container>
         </section>
           
@@ -686,17 +666,17 @@
             </div>
         </section>
     
-        <footer id="Contato" class="site-footer" >
+        <footer id="Contato" class="site-footer">
             <div class="footer-top container">
                 <div class="footer-brand">
-                    <!-- substitua pelo seu logo -->
-                    <a href="/index.html" class="div_logo" >
+                    <!-- Substitua pelo seu logo -->
+                    <a href="/index.html" class="div_logo">
                         <img src="/img/logoWebtagger.png" alt="Logo WebTagger">
                         <span>webtagger</span>
                     </a>
                     <p>Por mais de 18 anos a Webtagger é sinônimo de competência e inovação em desenvolvimento web em Pouso Alegre.</p>
                 </div>
-            
+        
                 <nav class="footer-nav">
                     <h6>Navegue</h6>
                     <div class="nav-columns">
@@ -754,34 +734,39 @@
                         </ul>
                     </div>
                 </nav>
-            
+        
                 <div class="footer-location">
                     <h6>Onde estamos</h6>
                     <p>Pouso Alegre, Centro – MG, Brasil</p>
                     <p>R. Afonso Pena, 245 – ap 201 </p>
                     <p>37550-000</p>
-
                 </div>
-
+        
                 <div class="footer-contact">
                     <h6>Siga nas redes</h6>
                     <div class="socials">
-                        <a href="https://instagram.com/webtagger" class="icon-instagram" target="_blank">@webtagger</a>
+                        <a href="https://instagram.com/webtagger" class="icon-instagram" target="_blank">
+                            <i class="fab fa-instagram"></i> @webtagger
+                        </a>
                     </div>
-
+        
                     <h6>Fale conosco</h6>
                     <p>
-                        <a href="mailto:atendimento@webtagger.com.br" class="icon-mail">atendimento@webtagger.com.br</a><br/>
-                        <a href="tel:+5535998587371" class="icon-phone">+55 (35) 99858-7371</a>
+                        <a href="mailto:atendimento@webtagger.com.br" class="icon-mail">
+                            <i class="fa-solid fa-envelope"></i> atendimento@webtagger.com.br
+                        </a><br/>
+                        <a href="tel:+5535998587371" class="icon-phone">
+                            <i class="fa-solid fa-phone"></i> +55 (35) 99858-7371
+                        </a>
                     </p>
                 </div>
             </div>
-                
+        
             <div class="footer-bottom container">
                 <small>© 2025 WebTagger. Projeto fictício criado para fins de estudo e demonstração de habilidades em desenvolvimento web.</small>
                 <div class="dev">
                     <small>Desenvolvido por: </small>
-                    <a href="https://luixzsouza.com.br" target="_blank"><img src="/img/luizsouza-developer.png" alt=""></a>
+                    <a href="https://luixzsouza.com.br" target="_blank"><img src="/img/luizsouza-developer.png" alt="Logo do desenvolvedor"></a>
                 </div>
             </div>
         </footer>
@@ -858,17 +843,25 @@
         </button>
     </div>
 
-    <a class="whatsapp-button" href="https://wa.me/SEUNUMERO" target="_blank">
+    <a class="whatsapp-button" href="https://wa.me/SEUNUMERO" target="_blank" aria-label="Fale conosco pelo WhatsApp">
         <i class="fab fa-whatsapp whatsapp-icon"></i>
+        <i class="fas fa-bell call-bell">
+            <span class="whatsapp-ping"></span>
+        </i>
         <span>Solicite um Orçamento!</span>
-        <div class="whatsapp-ping"></div>
-      </a>
+    </a>    
 
+    <!-- Script AOS Animations -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
       
-    <script src="/js/script.js" ></script>
-    <script src="https://kit.fontawesome.com/ed4d698bbc.js" crossorigin="anonymous"></script>
+    <!-- Script Slide -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- Icone do FontAwesome -->
+    <script src="https://kit.fontawesome.com/ed4d698bbc.js" crossorigin="anonymous"></script>
+    
+    <!-- Meu Script -->
+    <script src="/js/script.js" ></script>
 </body>
 </html>
 

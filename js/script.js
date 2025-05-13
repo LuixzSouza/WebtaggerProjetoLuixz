@@ -1,45 +1,3 @@
-// Animação de entrada do mouse da Linha esquerda direita
-const listItems = document.querySelectorAll('nav li');
-
-listItems.forEach(item => {
-    item.addEventListener('mouseenter', (e) => {
-        const bounding = item.getBoundingClientRect();
-        const mouseX = e.clientX;
-        const midPoint = bounding.left + bounding.width / 2;
-
-        if (mouseX < midPoint) {
-            item.classList.add('hover-left');
-            item.classList.remove('hover-right');
-        } else {
-            item.classList.add('hover-right');
-            item.classList.remove('hover-left');
-        }
-    });
-
-    item.addEventListener('mouseleave', (e) => {
-        const bounding = item.getBoundingClientRect();
-        const mouseX = e.clientX;
-        const midPoint = bounding.left + bounding.width / 2;
-
-        // Detecta se o mouse saiu pela esquerda ou direita
-        if (mouseX < midPoint) {
-            item.classList.add('leave-left');
-            item.classList.remove('leave-right');
-        } else {
-            item.classList.add('leave-right');
-            item.classList.remove('leave-left');
-        }
-
-        // Atraso para a animação de saída funcionar corretamente
-        setTimeout(() => {
-            item.classList.remove('hover-left');
-            item.classList.remove('hover-right');
-            item.classList.remove('leave-left');
-            item.classList.remove('leave-right');
-        }, 400); // Tempo suficiente para a animação de saída
-    });
-});
-
 // Header ficar ativo quando passo emcima
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
@@ -48,20 +6,32 @@ window.addEventListener("scroll", () => {
     let current = "";
 
     sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
             current = section.getAttribute("id");
         }
     });
 
     navLinks.forEach((link) => {
         link.classList.remove("active");
-        if (link.getAttribute("href") === `#${current}`) {
+
+        const href = link.getAttribute("href").replace("#", "");
+
+        // Se o link for "Solucoes", ativar se estiver em qualquer das 3 seções
+        if (
+            href === "Solucoes" &&
+            ["Sites", "Aplicativos", "SistemasEmNuvem"].includes(current)
+        ) {
+            link.classList.add("active");
+        }
+
+        // Para os demais, ativar normalmente
+        if (href === current) {
             link.classList.add("active");
         }
     });
 });
+
 
 // Menu
 document.addEventListener("DOMContentLoaded", function() {
@@ -307,9 +277,6 @@ const swiper = document.getElementById('meuSwiper');
 swiper.breakpoints = {
     0: {
     slidesPerView: 1,
-    },
-    640: {
-    slidesPerView: 2,
     },
     1024: {
     slidesPerView: 3,
