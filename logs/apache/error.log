@@ -1,0 +1,26 @@
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::c4fc:7196:66cc:2f93. Set the 'ServerName' directive globally to suppress this message
+[Wed May 14 14:46:15.798316 2025] [mpm_winnt:notice] [pid 5380:tid 916] AH00455: Apache/2.4.43 (Win32) mod_fcgid/2.3.9a configured -- resuming normal operations
+[Wed May 14 14:46:15.800831 2025] [mpm_winnt:notice] [pid 5380:tid 916] AH00456: Server built: Apr 21 2020 13:46:54
+[Wed May 14 14:46:15.800831 2025] [core:notice] [pid 5380:tid 916] AH00094: Command line: 'C:\\Users\\luiza\\AppData\\Roaming\\Local\\lightning-services\\apache-2.4.43+11\\bin\\win32\\bin\\httpd.exe -d C:/Users/luiza/AppData/Roaming/Local/lightning-services/apache-2.4.43+11/bin/win32 -D FOREGROUND -f C:\\Users\\luiza\\AppData\\Roaming\\Local\\run\\ZTbUGYJPi\\conf\\apache\\apache2.conf'
+[Wed May 14 14:46:15.814361 2025] [mpm_winnt:notice] [pid 5380:tid 916] AH00418: Parent: Created child process 8856
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::c4fc:7196:66cc:2f93. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::c4fc:7196:66cc:2f93. Set the 'ServerName' directive globally to suppress this message
+[Wed May 14 14:46:18.333721 2025] [mpm_winnt:notice] [pid 8856:tid 856] AH00354: Child: Starting 64 worker threads.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::c4fc:7196:66cc:2f93. Set the 'ServerName' directive globally to suppress this message
+[Mon May 19 14:47:52.856578 2025] [core:warn] [pid 21868:tid 744] AH00098: pid file C:/Users/luiza/AppData/Roaming/Local/run/ZTbUGYJPi/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon May 19 14:47:52.860580 2025] [mpm_winnt:notice] [pid 21868:tid 744] AH00455: Apache/2.4.43 (Win32) mod_fcgid/2.3.9a configured -- resuming normal operations
+[Mon May 19 14:47:52.860580 2025] [mpm_winnt:notice] [pid 21868:tid 744] AH00456: Server built: Apr 21 2020 13:46:54
+[Mon May 19 14:47:52.860580 2025] [core:notice] [pid 21868:tid 744] AH00094: Command line: 'C:\\Users\\luiza\\AppData\\Roaming\\Local\\lightning-services\\apache-2.4.43+11\\bin\\win32\\bin\\httpd.exe -d C:/Users/luiza/AppData/Roaming/Local/lightning-services/apache-2.4.43+11/bin/win32 -D FOREGROUND -f C:\\Users\\luiza\\AppData\\Roaming\\Local\\run\\ZTbUGYJPi\\conf\\apache\\apache2.conf'
+[Mon May 19 14:47:52.869593 2025] [mpm_winnt:notice] [pid 21868:tid 744] AH00418: Parent: Created child process 2772
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::c4fc:7196:66cc:2f93. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::c4fc:7196:66cc:2f93. Set the 'ServerName' directive globally to suppress this message
+[Mon May 19 14:47:54.007310 2025] [mpm_winnt:notice] [pid 2772:tid 832] AH00354: Child: Starting 64 worker threads.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::c4fc:7196:66cc:2f93. Set the 'ServerName' directive globally to suppress this message
+[Tue May 20 09:18:48.870387 2025] [core:warn] [pid 14816:tid 248] AH00098: pid file C:/Users/luiza/AppData/Roaming/Local/run/ZTbUGYJPi/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue May 20 09:18:48.876388 2025] [mpm_winnt:notice] [pid 14816:tid 248] AH00455: Apache/2.4.43 (Win32) mod_fcgid/2.3.9a configured -- resuming normal operations
+[Tue May 20 09:18:48.876388 2025] [mpm_winnt:notice] [pid 14816:tid 248] AH00456: Server built: Apr 21 2020 13:46:54
+[Tue May 20 09:18:48.876388 2025] [core:notice] [pid 14816:tid 248] AH00094: Command line: 'C:\\Users\\luiza\\AppData\\Roaming\\Local\\lightning-services\\apache-2.4.43+11\\bin\\win32\\bin\\httpd.exe -d C:/Users/luiza/AppData/Roaming/Local/lightning-services/apache-2.4.43+11/bin/win32 -D FOREGROUND -f C:\\Users\\luiza\\AppData\\Roaming\\Local\\run\\ZTbUGYJPi\\conf\\apache\\apache2.conf'
+[Tue May 20 09:18:48.882958 2025] [mpm_winnt:notice] [pid 14816:tid 248] AH00418: Parent: Created child process 3512
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::c4fc:7196:66cc:2f93. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::c4fc:7196:66cc:2f93. Set the 'ServerName' directive globally to suppress this message
+[Tue May 20 09:18:50.001127 2025] [mpm_winnt:notice] [pid 3512:tid 864] AH00354: Child: Starting 64 worker threads.
